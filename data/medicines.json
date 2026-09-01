@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Paracetamol",
+    "description": "Analgesico y antipiretico"
+  },
+  {
+    "name": "Ibuprofeno",
+    "description": "Antiinflamatorio y analgesico"
+  },
+  {
+    "name": "Amoxicilina",
+    "description": "Antibiotico"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "warehouseId": 1,
+    "medicineId": 1,
+    "quantity": 100
+  },
+  {
+    "warehouseId": 1,
+    "medicineId": 2,
+    "quantity": 80
+  },
+  {
+    "warehouseId": 1,
+    "medicineId": 3,
+    "quantity": 50
+  },
+  {
+    "warehouseId": 2,
+    "medicineId": 1,
+    "quantity": 60
+  },
+  {
+    "warehouseId": 2,
+    "medicineId": 2,
+    "quantity": 40
+  }
+]

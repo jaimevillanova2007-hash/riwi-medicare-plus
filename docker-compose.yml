@@ -1,0 +1,45 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: riwi_medicare_postgres
+    restart: always
+
+    environment:
+      POSTGRES_DB: riwi_medicare_plus
+      POSTGRES_USER: medicare_admin
+      POSTGRES_PASSWORD: medicare123
+
+    ports:
+      - "5435:5432"
+
+    volumes:
+      - medicare_postgres_data:/var/lib/postgresql/data
+
+    networks:
+      - medicare_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: riwi_medicare_pgadmin
+    restart: always
+
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@medicare.com
+      PGADMIN_DEFAULT_PASSWORD: RiwiMedicare#2026!
+
+    ports:
+      - "5052:80"
+
+    depends_on:
+      - postgres
+
+    networks:
+      - medicare_network
+
+volumes:
+  medicare_postgres_data:
+
+networks:
+  medicare_network:
+    driver: bridge

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Clinica Riwi Norte",
+    "nit": "900100001-1",
+    "responsibleName": "Carlos Perez",
+    "responsibleEmail": "carlos@riwi.com"
+  },
+  {
+    "name": "Clinica Riwi Sur",
+    "nit": "900100002-2",
+    "responsibleName": "Maria Gomez",
+    "responsibleEmail": "maria@riwi.com"
+  }
+]
